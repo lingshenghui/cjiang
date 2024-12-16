@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Microsoft YaHei', sans-serif;
-    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    background: linear-gradient(135deg, #2b1055 0%, #7597de 100%);
     min-height: 100vh;
     color: #fff;
 }
@@ -25,27 +25,37 @@ header {
 header h1 {
     font-size: 2.5em;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    color: #ffd868;
+    letter-spacing: 2px;
 }
 
 .lottery-box {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(43, 16, 85, 0.3);
     border-radius: 15px;
     padding: 30px;
     margin-bottom: 30px;
     backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 216, 104, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
 
 .prize-display {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(117, 151, 222, 0.2);
     border-radius: 10px;
     padding: 30px;
     text-align: center;
     margin-bottom: 20px;
+    border: 2px solid rgba(255, 216, 104, 0.3);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 #rolling-name {
     font-size: 2em;
     font-weight: bold;
+    background: linear-gradient(90deg, #ffd868, #ff9f68);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: none;
 }
 
 .control-panel {
@@ -60,18 +70,22 @@ header h1 {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    background: #4CAF50;
+    background: linear-gradient(145deg, #9c6dff 0%, #6d41ff 100%);
     color: white;
+    font-weight: bold;
     transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    box-shadow: 0 5px 15px rgba(156, 109, 255, 0.4);
 }
 
 .btn:disabled {
-    background: #ccc;
+    background: #666;
+    border-color: #555;
+    color: #999;
     cursor: not-allowed;
 }
 
@@ -82,9 +96,11 @@ header h1 {
 }
 
 .participants, .winners {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(43, 16, 85, 0.3);
     border-radius: 10px;
     padding: 20px;
+    border: 2px solid rgba(255, 216, 104, 0.3);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 textarea {
@@ -94,7 +110,10 @@ textarea {
     padding: 10px;
     border-radius: 5px;
     border: none;
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.95);
+    border: 2px solid rgba(156, 109, 255, 0.3);
+    color: #2b1055;
+    font-size: 14px;
 }
 
 #winnersList {
@@ -103,8 +122,33 @@ textarea {
 }
 
 #winnersList li {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(156, 109, 255, 0.15);
     margin: 5px 0;
     padding: 10px;
     border-radius: 5px;
+    border: 1px solid rgba(255, 216, 104, 0.3);
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+h3 {
+    color: #ffd868;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    margin-bottom: 10px;
+}
+
+/* 添加版权信息样式 */
+.copyright {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+    background: rgba(43, 16, 85, 0.3);
+    border-top: 2px solid rgba(255, 216, 104, 0.3);
+}
+
+.copyright p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 } 
